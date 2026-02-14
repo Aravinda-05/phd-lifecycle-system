@@ -1,0 +1,42 @@
+version: "3"
+
+services:
+  backend:
+    build: .
+    volumes:
+      - sites:/home/frappe/frappe-bench/sites
+    ports:
+      - "8000:8000"
+    command:
+      - bench
+      - serve
+      - --port
+      - "8000"
+      - --host
+      - "0.0.0.0"
+    depends_on:
+      - db
+      - redis-queue
+      - redis-cache
+      - redis-socketio
+
+  db:
+    image: mariadb:10.6
+    environment:
+      - MYSQL_ROOT_PASSWORD=123
+      - MYSQL_DATABASE=frappe
+    volumes:
+      - db-data:/var/lib/mysql
+
+  redis-queue:
+    image: redis:6.2-alpine
+  
+  redis-cache:
+    image: redis:6.2-alpine
+
+  redis-socketio:
+    image: redis:6.2-alpine
+
+volumes:
+  sites:
+  db-data:
