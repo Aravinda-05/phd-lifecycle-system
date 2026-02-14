@@ -17,3 +17,9 @@ fixtures = [
     "Role",
     "Workflow"
 ]
+
+scheduler_events = {
+    "daily": [
+        "phd_management.tasks.check_at_risk_students"
+    ]
+}
