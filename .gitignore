@@ -1,0 +1,15 @@
+*.pyc
+*.pyo
+__pycache__/
+env/
+.env
+*.egg-info/
+.DS_Store
+*.swp
+site_config.json
+sites/
+logs/
+*.log
+node_modules/
+package-lock.json
+yarn.lock
