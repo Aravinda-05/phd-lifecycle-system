@@ -1,0 +1,81 @@
+{
+    "actions": [],
+    "creation": "2024-05-21 12:00:00.000000",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+        "student",
+        "submission_date",
+        "thesis_title",
+        "abstract",
+        "thesis_file",
+        "version"
+    ],
+    "fields": [
+        {
+            "fieldname": "student",
+            "fieldtype": "Link",
+            "in_list_view": 1,
+            "label": "Student",
+            "options": "Student",
+            "reqd": 1
+        },
+        {
+            "default": "Today",
+            "fieldname": "submission_date",
+            "fieldtype": "Date",
+            "label": "Submission Date",
+            "reqd": 1
+        },
+        {
+            "fieldname": "thesis_title",
+            "fieldtype": "Data",
+            "in_list_view": 1,
+            "label": "Thesis Title",
+            "reqd": 1
+        },
+        {
+            "fieldname": "abstract",
+            "fieldtype": "Text",
+            "label": "Abstract"
+        },
+        {
+            "fieldname": "thesis_file",
+            "fieldtype": "Attach",
+            "label": "Thesis File",
+            "reqd": 1
+        },
+        {
+            "default": "1",
+            "fieldname": "version",
+            "fieldtype": "Int",
+            "label": "Version"
+        }
+    ],
+    "index_web_pages_for_search": 1,
+    "is_submittable": 1,
+    "links": [],
+    "modified": "2024-05-21 12:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "PhD Management",
+    "name": "Thesis Submission",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "System Manager",
+            "share": 1,
+            "write": 1
+        }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": [],
+    "track_changes": 1
+}
