@@ -1,0 +1,17 @@
+[
+    {
+        "doctype": "Role",
+        "name": "PhD Student",
+        "role_name": "PhD Student"
+    },
+    {
+        "doctype": "Role",
+        "name": "PhD Supervisor",
+        "role_name": "PhD Supervisor"
+    },
+    {
+        "doctype": "Role",
+        "name": "PhD Coordinator",
+        "role_name": "PhD Coordinator"
+    }
+]

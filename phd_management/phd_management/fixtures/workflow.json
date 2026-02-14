@@ -1,0 +1,79 @@
+[
+    {
+        "doctype": "Workflow",
+        "document_type": "Student",
+        "is_active": 1,
+        "name": "PhD Lifecycle",
+        "override_status": 1,
+        "states": [
+            {
+                "allow_edit": "System Manager",
+                "doc_status": 0,
+                "state": "Applicant"
+            },
+            {
+                "allow_edit": "PhD Coordinator",
+                "doc_status": 1,
+                "state": "Enrolled"
+            },
+            {
+                "allow_edit": "PhD Supervisor",
+                "doc_status": 1,
+                "state": "Research Phase"
+            },
+            {
+                "allow_edit": "PhD Student",
+                "doc_status": 1,
+                "state": "Thesis Submitted"
+            },
+            {
+                "allow_edit": "PhD Coordinator",
+                "doc_status": 1,
+                "state": "Examination"
+            },
+            {
+                "allow_edit": "PhD Coordinator",
+                "doc_status": 1,
+                "state": "Graduated"
+            },
+            {
+                "allow_edit": "System Manager",
+                "doc_status": 1,
+                "state": "Suspended"
+            }
+        ],
+        "transitions": [
+            {
+                "action": "Approve Enrollment",
+                "allowed": "PhD Coordinator",
+                "next_state": "Enrolled",
+                "state": "Applicant"
+            },
+            {
+                "action": "Start Research",
+                "allowed": "PhD Supervisor",
+                "next_state": "Research Phase",
+                "state": "Enrolled"
+            },
+            {
+                "action": "Submit Thesis",
+                "allowed": "PhD Student",
+                "next_state": "Thesis Submitted",
+                "state": "Research Phase"
+            },
+            {
+                "action": "Send for Examination",
+                "allowed": "PhD Coordinator",
+                "next_state": "Examination",
+                "state": "Thesis Submitted"
+            },
+            {
+                "action": "Approve Graduation",
+                "allowed": "PhD Coordinator",
+                "next_state": "Graduated",
+                "state": "Examination"
+            }
+        ],
+        "workflow_name": "PhD Lifecycle"
+    }
+]

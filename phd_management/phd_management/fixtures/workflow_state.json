@@ -1,0 +1,44 @@
+[
+    {
+        "doctype": "Workflow State",
+        "name": "Applicant",
+        "style": "Gray",
+        "workflow_state_name": "Applicant"
+    },
+    {
+        "doctype": "Workflow State",
+        "name": "Enrolled",
+        "style": "Blue",
+        "workflow_state_name": "Enrolled"
+    },
+    {
+        "doctype": "Workflow State",
+        "name": "Research Phase",
+        "style": "Orange",
+        "workflow_state_name": "Research Phase"
+    },
+    {
+        "doctype": "Workflow State",
+        "name": "Thesis Submitted",
+        "style": "Purple",
+        "workflow_state_name": "Thesis Submitted"
+    },
+    {
+        "doctype": "Workflow State",
+        "name": "Examination",
+        "style": "Yellow",
+        "workflow_state_name": "Examination"
+    },
+    {
+        "doctype": "Workflow State",
+        "name": "Graduated",
+        "style": "Green",
+        "workflow_state_name": "Graduated"
+    },
+    {
+        "doctype": "Workflow State",
+        "name": "Suspended",
+        "style": "Red",
+        "workflow_state_name": "Suspended"
+    }
+]

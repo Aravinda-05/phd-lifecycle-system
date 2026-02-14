@@ -11,3 +11,9 @@ app_license = "MIT"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/phd_management/css/phd_management.css"
 # app_include_js = "/assets/phd_management/js/phd_management.js"
+
+fixtures = [
+    "Workflow State",
+    "Role",
+    "Workflow"
+]
